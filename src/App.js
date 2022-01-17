@@ -7,10 +7,7 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <Note 
-      heading="hyy"
-      detail="hyy"
-      />
+      <Note heading={notes[0].Heading} detail={notes[0].Detail} />
       <Footer />
     </div>
   );
