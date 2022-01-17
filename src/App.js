@@ -3,15 +3,17 @@ import Footer from "./components/Footer";
 import Note from "./components/Note";
 import notes from "./notes";
 
-function createNotes(notes) {
-  return <Note heading={notes.Heading} detail={notes.Detail} />;
-}
+// function createNotes(notes) {
+//   return <Note heading={notes.Heading} detail={notes.Detail} />;
+// }
 
 export default function App() {
   return (
     <div className="App">
       <Header />
-      {notes.map(createNotes)}
+      {notes.map(function createNotes(notes) {
+  return <Note heading={notes.Heading} detail={notes.Detail} />;
+})}
       <Footer />
     </div>
   );
