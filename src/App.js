@@ -11,9 +11,9 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      {notes.map(function createNotes(notes) {
-  return <Note heading={notes.Heading} detail={notes.Detail} />;
-})}
+      {notes.map((notes) => {
+        return <Note heading={notes.Heading} detail={notes.Detail} />;
+      })}
       <Footer />
     </div>
   );
