@@ -7,7 +7,10 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <Note />
+      <Note 
+      heading="hyy"
+      detail="hyy"
+      />
       <Footer />
     </div>
   );
