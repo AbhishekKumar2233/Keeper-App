@@ -11,9 +11,11 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      {notes.map((notes) => {
-        return <Note heading={notes.Heading} detail={notes.Detail} />;
-      })}
+      <div className="container">
+        {notes.map((notes) => {
+          return <Note heading={notes.Heading} detail={notes.Detail} />;
+        })}
+      </div>
       <Footer />
     </div>
   );
