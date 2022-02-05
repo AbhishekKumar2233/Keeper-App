@@ -25,7 +25,13 @@ export default function App() {
   //delete function
   //when we call handleDel func
   //this on is called using props
+  //remember the props(id) value when call func
   function deleteNote(id) {
+    setNotes((prevNotes) => {
+      return prevNotes.filter((noteItem, index) => {
+        return index !== id;
+      });
+    });
     console.log("Done");
   }
 
@@ -35,9 +41,12 @@ export default function App() {
       <Createarea onAdd={addNote} />
       <div className="container">
         {/* create note data  */}
-        {Notes.map((noteItem) => {
+        {/* we get id and key from map function using index */}
+        {Notes.map((noteItem, index) => {
           return (
             <Note
+              key={index}
+              id={index}
               heading={noteItem.title}
               detail={noteItem.content}
               onDelete={deleteNote}

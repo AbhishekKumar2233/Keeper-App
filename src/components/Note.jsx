@@ -4,7 +4,7 @@ import "./styles.css";
 export default function Note(props) {
   //delete func
   function handleDel() {
-    props.onDelete(5);
+    props.onDelete(props.id);
   }
 
   return (
