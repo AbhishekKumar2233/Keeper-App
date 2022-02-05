@@ -8,11 +8,15 @@ import Createarea from "./components/Createarea";
 //   return <Note heading={notes.Heading} detail={notes.Detail} />;
 // }
 
+function addNote(note) {
+  console.log(note);
+}
+
 export default function App() {
   return (
     <div className="App">
       <Header />
-      <Createarea />
+      <Createarea onAdd={addNote} />
       <div className="container">
         {notes.map((notes) => {
           return <Note heading={notes.Heading} detail={notes.Detail} />;

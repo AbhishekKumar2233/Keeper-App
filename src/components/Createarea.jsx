@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-export default function Createarea() {
+export default function Createarea(props) {
   const [note, setNote] = useState({
     title: "",
     content: ""
@@ -19,6 +19,8 @@ export default function Createarea() {
 
   //onclick func
   function submitNote(event) {
+    props.onAdd(note);
+    console.log(note);
     event.preventDefault();
   }
 
