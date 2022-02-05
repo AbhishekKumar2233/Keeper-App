@@ -30,6 +30,8 @@ export default function App() {
     setNotes((prevNotes) => {
       return prevNotes.filter((noteItem, index) => {
         return index !== id;
+        // here we return all notes , where index
+        // does not equal the id
       });
     });
   }
