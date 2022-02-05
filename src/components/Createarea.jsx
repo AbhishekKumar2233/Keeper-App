@@ -17,6 +17,11 @@ export default function Createarea() {
     });
   }
 
+  //onclick func
+  function submitNote(event) {
+    event.preventDefault();
+  }
+
   return (
     <div className="create-area">
       <form>
@@ -35,7 +40,7 @@ export default function Createarea() {
           rows="3"
         />
         <br />
-        <button>Add</button>
+        <button onClick={submitNote}>Add</button>
       </form>
     </div>
   );
