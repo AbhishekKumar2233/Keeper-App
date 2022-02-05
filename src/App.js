@@ -27,6 +27,10 @@ export default function App() {
       <Header />
       <Createarea onAdd={addNote} />
       <div className="container">
+        {/* create note data  */}
+        {Notes.map((noteItem) => {
+          return <Note heading={noteItem.title} detail={noteItem.content} />;
+        })}
         {notes.map((notes) => {
           return <Note heading={notes.Heading} detail={notes.Detail} />;
         })}
