@@ -23,6 +23,10 @@ export default function Createarea(props) {
   function submitNote(event) {
     props.onAdd(note);
     // console.log(note);
+    setNote({
+      title: "",
+      content: ""
+    });
     event.preventDefault();
   }
 

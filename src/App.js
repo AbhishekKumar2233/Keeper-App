@@ -32,7 +32,6 @@ export default function App() {
         return index !== id;
       });
     });
-    console.log("Done");
   }
 
   return (
