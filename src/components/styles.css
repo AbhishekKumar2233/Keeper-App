@@ -20,11 +20,13 @@ header h1 {
 .container {
   display: flex;
   flex-wrap: wrap;
+  margin: 20px auto;
 }
 .Note {
   width: 21em;
   margin: 10px;
   padding: 5px;
+  margin: 10px auto;
   background: center;
   padding: 10px;
   background-color: rgb(241, 238, 238);
