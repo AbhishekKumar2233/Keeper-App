@@ -22,6 +22,13 @@ export default function App() {
     console.log(newNote);
   }
 
+  //delete function
+  //when we call handleDel func
+  //this on is called using props
+  function deleteNote(id) {
+    console.log("Done");
+  }
+
   return (
     <div className="App">
       <Header />
@@ -29,7 +36,13 @@ export default function App() {
       <div className="container">
         {/* create note data  */}
         {Notes.map((noteItem) => {
-          return <Note heading={noteItem.title} detail={noteItem.content} />;
+          return (
+            <Note
+              heading={noteItem.title}
+              detail={noteItem.content}
+              onDelete={deleteNote}
+            />
+          );
         })}
         {notes.map((notes) => {
           return <Note heading={notes.Heading} detail={notes.Detail} />;

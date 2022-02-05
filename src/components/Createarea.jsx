@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Note from "./Note";
 import "./styles.css";
 
 export default function Createarea(props) {
