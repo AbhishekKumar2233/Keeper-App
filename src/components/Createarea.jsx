@@ -7,6 +7,7 @@ export default function Createarea(props) {
     content: ""
   });
 
+  //change func
   function handleChange(event) {
     const { name, value } = event.target;
     setNote((prevValue) => {
@@ -20,7 +21,7 @@ export default function Createarea(props) {
   //onclick func
   function submitNote(event) {
     props.onAdd(note);
-    console.log(note);
+    // console.log(note);
     event.preventDefault();
   }
 

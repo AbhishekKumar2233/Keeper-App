@@ -8,6 +8,7 @@ import Createarea from "./components/Createarea";
 //   return <Note heading={notes.Heading} detail={notes.Detail} />;
 // }
 
+//func for get data from createarea
 function addNote(note) {
   console.log(note);
 }
