@@ -34,7 +34,50 @@ header h1 {
 .Note p {
   padding: 2px;
 }
-
+.create-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.create-area form {
+  margin: 10px auto;
+  padding: 25px 15%;
+  text-align: left;
+  border-radius: 20px 10px 20px 10px;
+  /* box-shadow: 8px 8px 10px rgb(241, 238, 238); */
+  /* background-color: rgb(241, 238, 238); */
+}
+.create-area input {
+  outline: none;
+  font-size: 15px;
+  padding: 4px 6px;
+  margin: 5px;
+}
+.create-area textarea {
+  outline: none;
+  font-size: 15px;
+  padding: 4px 6px;
+  margin: 5px;
+}
+input::placeholder {
+  color: #000;
+}
+textarea::placeholder {
+  color: #000;
+}
+.create-area button {
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bolder;
+  background-color: #f5ba13;
+  border: none;
+}
+.create-area button:hover {
+  background-color: #000;
+}
 footer {
   position: absolute;
   text-align: center;
