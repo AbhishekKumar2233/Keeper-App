@@ -10,7 +10,9 @@ import { useState } from "react";
 // }
 
 export default function App() {
-  const [Notes, setNotes] = useState([]);
+  const [Notes, setNotes] = useState([
+    { title: "New Note", content: "It is a new note." }
+  ]);
 
   //func for get data from createarea
   //newNote is a prop that getting the value from creatarea
