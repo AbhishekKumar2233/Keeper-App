@@ -58,6 +58,7 @@ export default function App() {
           return <Note heading={notes.Heading} detail={notes.Detail} />;
         })}
       </div>
+
       <Footer />
     </div>
   );

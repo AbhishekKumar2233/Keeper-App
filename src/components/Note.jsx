@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import DeleteIcon from "@material-ui/icons/Delete";
 
 export default function Note(props) {
   //delete func
@@ -9,9 +9,12 @@ export default function Note(props) {
 
   return (
     <div className="Note">
-      <h3>{props.heading}</h3>
+      <h4>{props.heading}</h4>
+
       <p>{props.detail}</p>
-      <button onClick={handleDel}>Delete</button>
+      <button onClick={handleDel}>
+        <DeleteIcon />
+      </button>
     </div>
   );
 }

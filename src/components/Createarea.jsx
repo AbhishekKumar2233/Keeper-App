@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Note from "./Note";
-import "./styles.css";
+import Zoom from "@material-ui/core/Zoom";
 
 export default function Createarea(props) {
+  const [isExpend, setExpend] = useState(false);
+
   const [note, setNote] = useState({
     title: "",
     content: ""
@@ -30,25 +31,35 @@ export default function Createarea(props) {
     event.preventDefault();
   }
 
+  //expend function
+  function expand() {
+    setExpend(true);
+  }
+
   return (
     <div className="create-area">
       <form>
-        <input
-          name="title"
-          onChange={handleChange}
-          value={note.title}
-          placeholder="Title"
-        />
+        {isExpend ? (
+          <input
+            name="title"
+            onChange={handleChange}
+            value={note.title}
+            placeholder="Title"
+          />
+        ) : null}
         <br />
         <textarea
           name="content"
+          onClick={expand}
           onChange={handleChange}
           value={note.content}
           placeholder="Take a note.."
-          rows="3"
+          rows={isExpend ? 3 : 1}
         />
         <br />
-        <button onClick={submitNote}>Add</button>
+        <Zoom in={isExpend}>
+          <button onClick={submitNote}>Add</button>
+        </Zoom>
       </form>
     </div>
   );

@@ -2,10 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu";
 }
-.App {
-  font-family: "ubuntu";
-}
+
 header {
   background-color: #f5ba13;
   margin: auto;
@@ -31,23 +30,28 @@ header h1 {
   padding: 10px;
   background-color: rgb(241, 238, 238);
 }
+.Note h4 {
+  font-size: 20px;
+  padding: 5px 2px;
+}
+
 .Note p {
+  margin-top: 5px;
   padding: 2px;
 }
 .Note button {
-  margin: 5px;
-  padding: 6px 10px;
-  border-radius: 25px;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-
-  font-weight: bolder;
-  background-color: #f5ba13;
+  float: right;
+  margin: 5px 10px;
   border: none;
+  cursor: pointer;
+  color: rgb(252, 30, 30);
+  background-color: none;
+  border-radius: 25px;
+  padding: 5px;
 }
 .Note button:hover {
   color: #fff;
-  background-color: red;
+  background-color: rgb(252, 30, 30);
 }
 .create-area {
   display: flex;
@@ -55,11 +59,13 @@ header h1 {
   margin: 20px auto;
 }
 .create-area form {
-  margin: 10px auto;
-  padding: 25px 5%;
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  padding: 20px;
   text-align: left;
-  border-radius: 20px 10px 20px 10px;
-  box-shadow: 8px 8px 10px rgb(189, 189, 189);
+
+  box-shadow: 0px 1px 5px rgb(189, 189, 189);
   /* background-color: rgb(241, 238, 238); */
 }
 .create-area input {
@@ -68,6 +74,7 @@ header h1 {
   font-size: 15px;
   padding: 4px 6px;
   margin: 5px;
+  border: none;
 }
 .create-area textarea {
   width: 100%;
@@ -75,6 +82,7 @@ header h1 {
   font-size: 15px;
   padding: 4px 6px;
   margin: 5px;
+  border: none;
 }
 
 input::placeholder {
