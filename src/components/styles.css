@@ -34,6 +34,21 @@ header h1 {
 .Note p {
   padding: 2px;
 }
+.Note button {
+  margin: 5px;
+  padding: 6px 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+
+  font-weight: bolder;
+  background-color: #f5ba13;
+  border: none;
+}
+.Note button:hover {
+  color: #fff;
+  background-color: red;
+}
 .create-area {
   display: flex;
   flex-wrap: wrap;
