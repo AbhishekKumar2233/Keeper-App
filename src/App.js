@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Note from "./components/Note";
-import notes from "./notes";
+// import notes from "./notes";
 import Createarea from "./components/Createarea";
 import { useState } from "react";
 
@@ -54,9 +54,9 @@ export default function App() {
             />
           );
         })}
-        {notes.map((notes) => {
+        {/* {notes.map((notes) => {
           return <Note heading={notes.Heading} detail={notes.Detail} />;
-        })}
+        })} */}
       </div>
 
       <Footer />
